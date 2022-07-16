@@ -22,8 +22,10 @@ public class DiscordBot extends ListenerAdapter {
 
 
     public DiscordBot() throws LoginException{
-        config = Dotenv.configure().load();
-        String token = config.get("TOKEN");
+        /*config = Dotenv.configure().load();
+        String token = config.get("TOKEN");*
+         */
+        String token = "OTk3ODcyMTA4MDkwNjk1ODIx.G06Sd-.H6pSxC-NTaqv2krdAY1rU1wLfF_j2Ri_R41tSY";
         DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(token);
         builder.setStatus(OnlineStatus.DO_NOT_DISTURB);
         builder.setActivity(Activity.playing("Honkai"));
