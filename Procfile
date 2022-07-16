@@ -1,1 +1,1 @@
-worker: java -jar CuchaBot.jar
+worker: java -jar src/main/java/Main/DiscordBot.java
