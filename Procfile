@@ -1,1 +1,1 @@
-worker: java -jar Jar.jar
+worker: java -jar CuchaBot.jar
