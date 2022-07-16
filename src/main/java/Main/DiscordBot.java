@@ -41,6 +41,7 @@ public class DiscordBot extends ListenerAdapter {
 
 
     public static void main(String[] args) {
+        System.out.println("actually working");
         try {
             DiscordBot discordBot = new DiscordBot();
         } catch (LoginException e) {
