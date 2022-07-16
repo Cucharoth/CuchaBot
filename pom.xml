@@ -53,11 +53,6 @@
                     <target>${project.java.version}</target>
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
-                <executions>
-                <execution>
-                    <phase>package</phase><goals>
-                </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
