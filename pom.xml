@@ -27,6 +27,14 @@
         </dependency>
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>jcenter</id>
+            <name>jcenter-bintray</name>
+            <url>http://jcenter.bintray.com</url>
+        </repository>
+    </repositories>
+
     <build>
         <plugins>
             <plugin>
