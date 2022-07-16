@@ -55,7 +55,7 @@
                 </configuration>
                 <executions>
                 <execution>
-                    <phase>package</phase><goals><goal>assemble</goal></goals>
+                    <phase>package</phase><goals>
                 </execution>
                 </executions>
             </plugin>
