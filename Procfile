@@ -1,1 +1,1 @@
-Worker: java src/main/java/Main/DiscordBot.java
+worker: sh target/bin/main
