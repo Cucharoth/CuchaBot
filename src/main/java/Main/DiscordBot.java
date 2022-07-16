@@ -18,7 +18,7 @@ import javax.security.auth.login.LoginException;
 
 public class DiscordBot extends ListenerAdapter {
     private final ShardManager shardManager;
-    private final Dotenv config;
+    //private final Dotenv config;
 
 
     public DiscordBot() throws LoginException{
@@ -38,9 +38,7 @@ public class DiscordBot extends ListenerAdapter {
         return shardManager;
     }
 
-    public Dotenv getConfig() {
-        return config;
-    }
+
 
     public static void main(String[] args) {
         try {
