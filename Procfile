@@ -1,1 +1,1 @@
-worker: java -cp target/classes/:target/dependency/* src/main/java/Main/DiscordBot.java
+worker: java -cp target/classes/:target/dependency/* DiscordBot.java
