@@ -18,20 +18,16 @@ import javax.security.auth.login.LoginException;
 
 public class DiscordBot extends ListenerAdapter {
     private final ShardManager shardManager;
-    //private final Dotenv config;
+    private final Dotenv config;
 
 
     public DiscordBot() throws LoginException{
         //Un// for local testing
-        //config = Dotenv.configure().load();
-<<<<<<< Updated upstream
-        String token = System.getenv("TOKEN");
-=======
-        //String token = config.get("TOKEN");
+        config = Dotenv.configure().load();
+        String token = config.get("TOKEN");
 
->>>>>>> Stashed changes
 
-        String token = System.getenv("TOKEN");
+        //String token = System.getenv("TOKEN");
 
         DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(token);
         builder.setStatus(OnlineStatus.DO_NOT_DISTURB);
@@ -39,6 +35,7 @@ public class DiscordBot extends ListenerAdapter {
         shardManager = builder.build();
         shardManager.addEventListener(new BotListener());
         shardManager.addEventListener(new BotCommands());
+        shardManager.addEventListener(new ButtonListener());
     }
 
     public ShardManager getShardManager(){
@@ -48,7 +45,7 @@ public class DiscordBot extends ListenerAdapter {
 
 
     public static void main(String[] args) {
-        System.out.println("actually working");
+        System.out.println("Actually Working >:O");
         try {
             DiscordBot discordBot = new DiscordBot();
         } catch (LoginException e) {
