@@ -20,11 +20,16 @@ public class ButtonListener extends ListenerAdapter {
         patchs.put("5.8", "https://imgur.com/QwqTkvq" + "\n" + "https://imgur.com/JInQmZo" + "\n" + "Painto Girl");
         if(event.getButton().getId() != null) {
             switch (event.getButton().getId()) {
-                case "5.4" -> response = patchs.get("5.4");
-                case "5.5" -> response = patchs.get("5.5");
-                case "5.6" -> response = patchs.get("5.6");
-                case "5.7" -> response = patchs.get("5.7");
-                case "5.8" -> response = patchs.get("5.8");
+                case "5.4": response = patchs.get("5.4");
+                    break;
+                case "5.5": response = patchs.get("5.5");
+                    break;
+                case "5.6": response = patchs.get("5.6");
+                    break;
+                case "5.7": response = patchs.get("5.7");
+                    break;
+                case "5.8": response = patchs.get("5.8");
+                    break;
             }
         }
         event.reply(response).setEphemeral(true).queue();
