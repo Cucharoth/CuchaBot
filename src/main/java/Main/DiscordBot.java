@@ -18,7 +18,7 @@ import javax.security.auth.login.LoginException;
 
 public class DiscordBot extends ListenerAdapter {
     private final ShardManager shardManager;
-    private final Dotenv config = Dotenv.configure().load();
+    //private final Dotenv config = Dotenv.configure().load();
 
 
     public DiscordBot() throws LoginException{
