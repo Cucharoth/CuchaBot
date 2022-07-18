@@ -30,8 +30,8 @@ public class DiscordBot extends ListenerAdapter {
         builder.setStatus(OnlineStatus.DO_NOT_DISTURB);
         builder.setActivity(Activity.playing("Honkai"));
         shardManager = builder.build();
-        shardManager.addEventListener(new BotListener());
-        shardManager.addEventListener(new BotCommands());
+        //shardManager.addEventListener(new BotListener());
+        //shardManager.addEventListener(new BotCommands());
     }
 
     public ShardManager getShardManager(){
