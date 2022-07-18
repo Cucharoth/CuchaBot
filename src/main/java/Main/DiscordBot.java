@@ -22,9 +22,16 @@ public class DiscordBot extends ListenerAdapter {
 
 
     public DiscordBot() throws LoginException{
+        //Un// for local testing
         //config = Dotenv.configure().load();
+<<<<<<< Updated upstream
         String token = System.getenv("TOKEN");
+=======
+        //String token = config.get("TOKEN");
 
+>>>>>>> Stashed changes
+
+        String token = System.getenv("TOKEN");
 
         DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(token);
         builder.setStatus(OnlineStatus.DO_NOT_DISTURB);
@@ -48,15 +55,13 @@ public class DiscordBot extends ListenerAdapter {
             e.printStackTrace();
         }
 
-
+        //Another way of building
         /*JDA jda = JDABuilder.createDefault("OTk3ODcyMTA4MDkwNjk1ODIx.G06Sd-.H6pSxC-NTaqv2krdAY1rU1wLfF_j2Ri_R41tSY")
                 .setActivity(Activity.playing("Honkai"))
                 .addEventListeners(new BotCommands())
                 .build();/*
-
         /*Guild guild = jda.getGuildById("286988491160551424");
         if(guild != null) {
             guild.upsertCommand("test1", "test").queue();*/
-
     }
 }
