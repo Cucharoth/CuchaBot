@@ -24,6 +24,7 @@ public class DiscordBot extends ListenerAdapter {
     public DiscordBot() throws LoginException{
         //config = Dotenv.configure().load();
         String token = System.getenv("TOKEN");
+        //test
 
 
         DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(token);
