@@ -18,12 +18,12 @@ import javax.security.auth.login.LoginException;
 
 public class DiscordBot extends ListenerAdapter {
     private final ShardManager shardManager;
-    private final Dotenv config;
+    //private final Dotenv config;
 
 
     public DiscordBot() throws LoginException{
-        config = Dotenv.configure().load();
-        String token = config.get("TOKEN");
+        //config = Dotenv.configure().load();
+        String token = System.getenv("TOKEN");
 
 
         DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(token);
