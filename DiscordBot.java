@@ -1,5 +1,3 @@
-package Main;
-
 import Main.Commands.BotCommands;
 import io.github.cdimascio.dotenv.Dotenv;
 import net.dv8tion.jda.api.JDA;
