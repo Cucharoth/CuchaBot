@@ -43,13 +43,6 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.7.0</version>
                 <configuration>
-                    <assembleDirectory>target</assembleDirectory>
-                    <programs>
-                        <program>
-                            <mainClass>Main.DiscordBot</mainClass>
-                            <name>main</name>
-                        </program>
-                    </programs>
                     <source>${project.java.version}</source>
                     <target>${project.java.version}</target>
                     <encoding>${project.build.sourceEncoding}</encoding>
